@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Choose</title>
+   <style>
+      body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column; /* إضافة اتجاه عمودي للعناصر */
+         height: 100vh;
+         margin: 0;
+         background-color: black;
+      }
+
+      h1 {
+         color: aqua;
+         margin-bottom: 20px;
+          font-size: 50px;/* تضبيط المسافة بين العنوان والأزرار */
+      }
+
+      .button-container {
+         text-align: center;
+      }
+
+      .custom-button {
+         padding: 15px 30px;
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+         border-radius: 10px;
+         font-size: 24px;
+         cursor: pointer;
+         margin: 10px 0; /* تضبيط المسافة بين الزرين */
+      }
+
+      .custom-button:hover {
+         background-color: #0056b3;
+      }
+
+      .custom-button:focus {
+         outline: none;
+      }
+
+      .card {
+         border: 2px solid black;
+         width: 800px;
+         height: 200px;
+         background-color: black;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 20px;
+      }
+
+      .card-left,
+      .card-right {
+         flex: 1;
+      }
+   </style>
+</head>
+<body>
+   <h1>Choose Your Role</h1>
+   <div class="button-container">
+      <div class="card">
+         <div class="card-left">
+            <a href="login/login.php"><button class="custom-button" onclick="Student">Student</button></a>
+         </div>
+         <div class="card-right">
+            <a href="owner/login.php"><button class="custom-button" onclick="Owner">Owner</button></a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

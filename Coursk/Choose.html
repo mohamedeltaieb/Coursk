@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Choose</title>
+   <style>
+      body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         background: url('choose.jpg')  no-repeat center center fixed;
+         background-size: cover;
+      }
+
+      h1 {
+         color: aqua;
+         margin-bottom: 20px;
+         font-size: 50px;
+      }
+
+      .main-card {
+         width: 50%;
+          height: 50%;
+         background-color: rgba(0, 0, 0, 0.5); /* شفافية الكارد الكبير */
+         padding: 20px;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         border-radius: 10px;
+      }
+
+      .inner-card {
+         width: 20%;
+         background-color: white;
+         padding: 20px;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .inner-card img {
+         width: 150px;
+         height: 150px;
+         border-radius: 50%;
+         margin-bottom: 20px;
+      }
+
+      .custom-button {
+         padding: 10px 20px;
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+         border-radius: 10px;
+         font-size: 20px;
+         cursor: pointer;
+      }
+
+      .custom-button:hover {
+         background-color: red;
+      }
+
+      .custom-button:focus {
+         outline: none;
+      }
+   </style>
+</head>
+<body>
+   
+    
+   <div class="main-card">
+      <div class="inner-card">
+         <img src="student.png" alt="Student">
+         <a href="login/login.php"><button class="custom-button">Student</button></a>
+      </div>
+      <div class="inner-card">
+         <img src="owner.jpg" alt="Owner">
+         <a href="owner/login.php"><button class="custom-button">Owner</button></a>
+      </div>
+   </div>
+    
+</body>
+</html>
